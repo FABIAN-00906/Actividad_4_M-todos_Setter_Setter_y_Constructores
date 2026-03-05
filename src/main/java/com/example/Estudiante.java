@@ -2,26 +2,22 @@ package com.example;
 
 public class Estudiante {
 
-    // Atributos privados
     private String nombre;
     private int edad;
     private double promedio;
 
-    // Constructor vacío
     public Estudiante() {
         this.nombre = "Desconocido";
         this.edad = 0;
         this.promedio = 0.0;
     }
 
-    // Constructor completo
     public Estudiante(String nombre, int edad, double promedio) {
         this.nombre = nombre;
-        setEdad(edad); // usamos setter para aplicar validación
+        setEdad(edad);
         this.promedio = promedio;
     }
 
-    // Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -50,12 +46,10 @@ public class Estudiante {
         this.promedio = promedio;
     }
 
-    // Método haAprobado
     public boolean haAprobado() {
         return promedio >= 3.0;
     }
 
-    // Método mostrarInfo
     public void mostrarInfo() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
